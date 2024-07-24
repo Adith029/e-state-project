@@ -1,0 +1,146 @@
+/* Properties component styles */
+.new-container-fluid {
+    padding: 20px;
+}
+
+.new-header {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.new-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.new-filters .form-control {
+    width: auto;
+    margin-right: 10px;
+    flex-grow: 1;
+    max-width: 200px;
+}
+
+.new-property-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.new-property-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+}
+
+.new-property-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.new-property-details {
+    flex: 1;
+    text-align: center;
+}
+
+.new-property-details h1 {
+    color: #ff6600;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.new-property-details p, .new-property-details h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.new-property-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.new-property-rating span {
+    margin-left: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.new-property-item .btn {
+    width: 100%;
+    border-radius: 0px;
+    height: 55px;
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+    .new-filters {
+        justify-content: flex-start;
+    }
+
+    .new-property-item {
+        flex-direction: row;
+        max-width: 100%;
+        height: 300px;
+    }
+
+    .new-property-img {
+        max-width: 300px;
+        height: 100%;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .new-property-details {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .new-property-details h1, .new-property-details p, .new-property-details h3 {
+        margin-left: 0;
+    }
+
+    .new-property-item .btn {
+        width: 200px;
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 992px) {
+    .new-filters .form-control {
+        max-width: none;
+    }
+
+    .new-property-item {
+        max-width: 100%;
+        height: 250px;
+    }
+
+    .new-property-details h1 {
+        font-size: 2rem;
+    }
+
+    .new-property-details p, .new-property-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .new-property-rating span {
+        font-size: 1.2rem;
+    }
+
+    .new-property-item .btn {
+        width: 150px;
+    }
+}

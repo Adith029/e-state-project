@@ -1,0 +1,148 @@
+
+.footer-container {
+    background-color: #0d274d;
+    color: white;
+    padding: 0px 0px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .newsletter {
+    width: 100%;
+    background-color: #007bff;
+    padding: 20px; 
+    box-sizing: border-box;
+  }
+  
+  .newsletter-title {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .newsletter-subtitle {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .newsletter-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .newsletter-input input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+    max-width: 70%;
+  }
+  
+  .newsletter-input button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0d274d;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+  }
+  
+  .footer-description {
+    margin: 10px 0;
+  }
+  
+  .footer-social a {
+    margin: 0 5px;
+    display: inline-block;
+  }
+  
+  .footer-links ul, .footer-services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li, .footer-services ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-links ul li a, .footer-services ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-contact p {
+    margin: 10px 0;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #1a1a1a;
+  }
+  
+  .footer-bottom a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom p {
+    margin: 10px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .newsletter-input {
+      flex-direction: column;
+    }
+  
+    .newsletter-input input, .newsletter-input button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .newsletter-title {
+      font-size: 20px;
+    }
+  
+    .newsletter-subtitle {
+      font-size: 14px;
+    }
+  
+    .footer-logo {
+      font-size: 20px;
+    }
+  
+    .footer-links ul li, .footer-services ul li {
+      margin: 5px 0;
+    }
+  
+    .footer-contact p {
+      font-size: 14px;
+    }
+  }
+  

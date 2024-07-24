@@ -1,0 +1,135 @@
+.bodyPart2Container {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 40px;
+}
+
+.bodypart2image {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.aboutUs {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutUsTitle {
+  text-align: left;
+  color: #007bff;
+}
+
+.aboutUsHeading {
+  text-align: left;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.aboutUsDescription {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #7C8893;
+}
+
+.modernHouse {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.apartmentCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.cardDescription {
+  font-size: 12px;
+  color: #7C8893;
+  margin-top: -10px;
+}
+
+.learnMore {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .bodypart2image {
+    max-width: 350px;
+  }
+  .aboutUsHeading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .bodypart2image {
+    max-width: 300px;
+  }
+  .aboutUsHeading {
+    font-size: 35px;
+  }
+  .modernHouse {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bodypart2image {
+    max-width: 250px;
+  }
+  .aboutUsHeading {
+    font-size: 30px;
+  }
+  .modernHouse {
+    align-items: center;
+    gap: 15px;
+  }
+  .apartmentCard {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .bodypart2image {
+    max-width: 200px;
+  }
+  .aboutUsHeading {
+    font-size: 25px;
+  }
+  .modernHouse {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .bodypart2image {
+    max-width: 150px;
+  }
+  .aboutUsHeading {
+    font-size: 20px;
+  }
+  .modernHouse {
+    gap: 5px;
+  }
+  .cardDescription {
+    font-size: 10px;
+  }
+}

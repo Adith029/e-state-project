@@ -1,0 +1,145 @@
+/* General reset for body to prevent overflow */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Main container filling the viewport height */
+.seller-container-fluid {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.seller-sidebar {
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.seller-profile {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.seller-profile-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.seller-sidebar-elements {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.seller-sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.seller-sidebar-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.seller-sidebar-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.seller-sidebar-link span {
+  margin-left: 10px;
+}
+
+.seller-logout-div {
+  margin-top: auto; /* Push the logout button to the bottom */
+  text-align: center;
+}
+
+.seller-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto; /* Allow content to scroll if it overflows */
+  box-sizing: border-box;
+}
+
+.seller-property-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sellerProfile-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sellerProfile-header {
+  font-size: 2.5em;
+  color: #1e90ff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sellerProfile-form {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sellerProfile-formGroup {
+  flex: 0 0 48%;
+  margin-bottom: 20px;
+}
+
+.sellerProfile-formGroup-full {
+  flex: 0 0 100%;
+}
+
+.sellerProfile-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+.sellerProfile-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1e90ff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sellerProfile-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+ 
+}

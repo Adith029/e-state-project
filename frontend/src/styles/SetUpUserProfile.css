@@ -1,0 +1,79 @@
+
+.buyerProfile-container {
+    width: 80vw; /* Adjusted width to fit the screen */
+    margin: 0 auto;
+   padding: 100px;
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .buyerProfile-header {
+    font-size: 2.5em;
+    color: #1e90ff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .buyerProfile-form {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .buyerProfile-formGroup {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+  }
+  
+  .buyerProfile-formGroup-full {
+    flex: 0 0 100%;
+  }
+  
+  .buyerProfile-label {
+    display: block;
+    margin-bottom: 10px;
+    color: #1e90ff;
+    font-weight: bold;
+  }
+  
+  .buyerProfile-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1e90ff;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .buyerProfile-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buyerProfile-button:hover {
+    background-color: #005fbb;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    .buyerProfile-container {
+      width: 95vw; /* Adjust for smaller screens */
+      padding: 20px 2.5vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .buyerProfile-formGroup {
+      flex: 0 0 100%;
+    }
+  }
+  

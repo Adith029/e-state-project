@@ -1,0 +1,105 @@
+.aboutUs-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.aboutUs-header {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.aboutUs-descriptionContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.aboutUs-description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.aboutUs-values {
+  margin-bottom: 30px;
+}
+
+.aboutUs-subheader {
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.aboutUs-valuesList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.aboutUs-valueItem {
+  margin: 0 15px;
+  text-align: center;
+  flex: 1 1 200px; /* Ensure items have equal width and wrap properly */
+  max-width: 300px; /* Adjust max-width as needed */
+}
+
+.aboutUs-valueImage {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.aboutUs-team {
+  margin-bottom: 30px;
+}
+
+.aboutUs-teamMembers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure team members wrap on smaller screens */
+}
+
+.aboutUs-teamMember {
+  margin: 0 15px;
+  text-align: center;
+  flex: 1 1 200px; /* Ensure items have equal width and wrap properly */
+  max-width: 300px; /* Adjust max-width as needed */
+}
+
+.aboutUs-teamImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.aboutUs-teamName {
+  font-weight: bold;
+}
+
+.aboutUs-teamRole {
+  color: gray;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .aboutUs-descriptionContainer {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .aboutUs-valuesList,
+  .aboutUs-teamMembers {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .aboutUs-valueItem,
+  .aboutUs-teamMember {
+    margin: 10px 0;
+    flex: 1 1 100%; /* Full width for items on smaller screens */
+    max-width: 100%; /* Full width for items on smaller screens */
+  }
+}
