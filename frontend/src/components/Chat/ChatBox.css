@@ -1,0 +1,127 @@
+/* Base Styles */
+.chatbox-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px; /* Changed from 300px to 600px for better visibility */
+  height: 70vh; /* Changed from 400px to 70vh for better height adaptation */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+.chatbox-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.chatbox-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+
+.chatbox-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+
+.chatbox-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  font-size: 16px; /* Increased font size for better readability */
+}
+
+.chatbox-input button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+  font-size: 16px;
+}
+
+.chatbox-input button:hover {
+  background-color: #0056b3;
+}
+
+.contacth1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .chatbox-container {
+    width: 90%;
+    height: 60vh;
+    max-width: none;
+  }
+
+  .chatbox-messages {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+
+  .chatbox-message {
+    padding: 8px; /* Adjust message padding for smaller screens */
+    font-size: 14px; /* Adjust font size for better fit */
+  }
+
+  .contacth1 {
+    font-size: 36px;
+    margin: 10px;
+  }
+
+  .chatbox-input button {
+    width: 80px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chatbox-container {
+    height: 50vh;
+    padding: 10px;
+  }
+
+  .chatbox-messages {
+    padding: 6px; /* Further adjust padding */
+  }
+
+  .chatbox-message {
+    padding: 6px; /* Further adjust message padding */
+    font-size: 12px; /* Further adjust font size */
+  }
+
+  .chatbox-input {
+    flex-direction: column;
+  }
+
+  .chatbox-input input {
+    margin-bottom: 10px;
+    font-size: 14px; /* Adjust input font size for smaller screens */
+  }
+
+  .chatbox-input button {
+    width: 100%;
+    font-size: 14px; /* Adjust button font size for smaller screens */
+  }
+
+  .contacth1 {
+    font-size: 32px; /* Adjust header font size for smaller screens */
+    margin: 10px;
+  }
+}

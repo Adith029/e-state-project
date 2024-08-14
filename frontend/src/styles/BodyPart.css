@@ -1,0 +1,124 @@
+.discover {
+  font-size: 50px;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+}
+
+.discoverDiv {
+  display: flex;
+  justify-content: flex-start; /* Adjusted alignment */
+  align-items: center; /* Center vertically */
+  width: 100%;
+  margin-left: 100px;
+}
+
+.house1 {
+  width: 80%;
+  max-width: 40%;
+  margin-right: 120px;
+}
+
+.house1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.discoverPara {
+  text-align: left;
+  font-size: smaller;
+  width: 100%;
+  max-width: 90%;
+  margin-left: 80px;
+}
+
+.makeInquiry {
+  width: 180px;
+  margin-top: 20px;
+  border-radius: 0;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px; /* Adjusted max-width */
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.searchInput, .searchButton {
+  flex: 1;
+  margin: 10px;
+  padding: 8px;
+  height: 50px;
+  font-size: 16px;
+  min-width: 150px;
+  border: 1px solid #7C8893;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.searchInput:hover {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.searchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.searchButton:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .search {
+    padding: 10px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .discoverDiv {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px; /* Adjusted margin */
+  }
+
+  .house1 {
+    max-width: 100%; /* Ensure image takes full width */
+    margin-right: 0;
+  }
+
+  .discoverPara {
+    margin-left: 20px; /* Adjusted margin */
+  }
+
+  .search {
+    flex-direction: column; /* Stack items vertically */
+    padding: 15px; /* Adjusted padding */
+  }
+
+  .searchInput, .searchButton {
+    flex: none;
+    width: calc(100% - 20px); /* Adjusted width */
+  }
+}

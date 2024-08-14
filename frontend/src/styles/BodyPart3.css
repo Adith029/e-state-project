@@ -1,0 +1,305 @@
+.app-container {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-align: center;
+    
+  }
+  
+  .app-header {
+    margin-top: 150px;
+    padding: 20px;
+  }
+  
+  .app-subtitle {
+    color: #007bff;
+    margin: 0;
+  }
+  
+  .app-title {
+    margin: 10px 0;
+    font-size: 36px;
+  }
+  
+  .main-focus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .focus-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .focus-item .icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .focus-title {
+    margin: 10px 0;
+    font-size: 24px;
+  }
+  
+  .focus-description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .focus-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .featured-categories {
+    margin-top: 60px;
+    padding: 40px 20px;
+    background-color: #e0f7fa;
+  }
+  
+  .categories-header {
+    margin-bottom: 30px;
+  }
+  
+  .categories-title {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .categories-subtitle {
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .categories-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .category-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .category-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .category-title {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .category-description {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+  }
+  .agent-card p, h3{
+    text-align: center;
+    margin: auto;
+  }
+  .agent-card  h3{
+margin: auto; 
+text-align: center; 
+}
+
+.pagination-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.pagination-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination-button.active {
+  background-color: #0056b3;
+  font-weight: bold;
+}
+
+.pagination-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .main-focus, .categories {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .focus-item, .category-item {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .app-title {
+      font-size: 28px;
+    }
+  
+    .focus-title {
+      font-size: 20px;
+    }
+  
+    .focus-description, .category-description {
+      font-size: 12px;
+    }
+  
+    .categories-title {
+      font-size: 20px;
+    }
+  }
+
+
+.agents-section {
+  margin-top: 60px;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.agents-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.agent-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 220px;
+  text-align: center;
+}
+
+.agent-card img {
+  width: 100%;
+  height: auto;
+}
+
+.agent-info {
+  padding: 15px;
+}
+
+.agent-experience {
+  font-size: 14px;
+  color: #007bff;
+}
+
+.become-agent-section {
+  margin-top: 60px;
+  background: #e8f4fd;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.join-button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.app-title {
+    margin: 20px 0;
+  }
+  
+  .listing-card-unique {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .listing-image-unique {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .listing-info-unique {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .listing-type-unique {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .listing-type-unique.for-sale-unique {
+    background-color: #1E90FF;
+  }
+  
+  .listing-type-unique.for-rent-unique {
+    background-color: #32CD32;
+  }
+  
+  .agent-info-unique {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .listing-address-unique {
+    font-size: 1.25em;
+    margin: 10px 0;
+  }
+  
+  .listing-city-unique, .listing-details-unique {
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .listing-price-unique {
+    margin-top: 15px;
+    color: #333;
+  }
+  
+

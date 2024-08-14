@@ -1,0 +1,80 @@
+.property-item-fav-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+}
+
+.property-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.property-img-fav-1 {
+  width: 400px;
+  margin-right: 20px;
+  border-radius: 10px;
+  height:400px
+}
+
+.property-details-fav-1 {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.property-details-fav-1 h1 {
+  margin-left: 0; /* Adjusted to align left */
+  text-align: left;
+  color: #ff6600;
+}
+
+.property-details-fav-1 p,
+.property-details-fav-1 h3 {
+  margin-left: 0; /* Adjusted to align left */
+  text-align: left;
+  font-size: 25px;
+}
+
+.btnView {
+  width: 150px;
+  margin-top: -50px; /* Adjusted to remove top margin */
+  border-radius: 0px;
+  height: 55px;
+  margin-left: auto; /* Adjusted to align button to the right */
+  margin-left: 10px; /* Adjusted left margin */
+  align-self: flex-start; /* Align button to the start of the flex container */
+}
+
+@media (max-width: 768px) {
+  .property-card {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .property-img-fav-1 {
+    width: 100%; /* Make image full width on smaller screens */
+    margin-bottom: 15px;
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .property-details-fav-1 h1 {
+    font-size: 24px; /* Adjusted font size */
+  }
+
+  .property-details-fav-1 h3,
+  .property-details-fav-1 p {
+    font-size: 18px; /* Adjusted font size */
+  }
+
+  .btnView {
+    width: 100%; /* Make button full width on smaller screens */
+    margin-top: 20px; /* Adjust top margin */
+    margin-left: 0; /* Remove left margin */
+  }
+}

@@ -1,0 +1,201 @@
+.sidebar {
+  height: 100vh;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; 
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0;
+}
+
+.nav-link {
+  margin: 10px 0;
+}
+
+.sidebar-elements {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.help-support, .logout {
+  margin-top: auto;
+}
+
+.header {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filters .form-control {
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.property-list {
+  margin-top: 20px;
+}
+
+.property-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.property-img {
+  width: 100%; /* Make responsive */
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.property-details {
+  display: block;
+}
+
+.property-details h1 {
+  margin-left: 30px;
+  text-align: left;
+  color: #ff6600;
+}
+
+.property-details p, .property-details h3 {
+  margin-left: 30px;
+  text-align: left;
+  font-size: 25px;
+}
+
+.logout {
+  margin-top: 200px;
+  background-color: red;
+  font-size: 20px;
+}
+
+.property-item .btn {
+  width: 100%; /* Make responsive */
+  margin-top: 40px;
+  border-radius: 0;
+  height: 55px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.sidebar-elements, .sidebar-elements a {
+  text-decoration: none;
+  color: #7F7F7F;
+  font-size: 20px;
+}
+
+.sidebar-link {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.sidebar-link:hover {
+  color: #0056b3;
+}
+
+.sidebar-link.active {
+  background-color: black;
+  color: white;
+}
+
+.sidebar-link i {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar-elements {
+    margin: 10px 0;
+  }
+
+  .property-list {
+    width: 100%;
+  }
+
+  .profile-img,
+  .nav-link,
+  .header,
+  .filters,
+  .property-item {
+    margin: 10px 0;
+  }
+
+  .property-item .btn {
+    margin-left: 0;
+    width: 100%;
+  }
+}

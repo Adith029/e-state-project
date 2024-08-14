@@ -1,0 +1,20 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 20px;
+  }
+  
+  .becomeAgent {
+    background-color: #007bff;
+    border-radius: 0px;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .becomeAgent {
+      width: 100%; /* Make button full width on smaller screens */
+    }
+  }
+  

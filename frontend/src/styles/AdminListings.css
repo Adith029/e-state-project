@@ -1,0 +1,52 @@
+.new-property-admin-list {
+    margin-top: 20px;
+}
+
+.new-property-admin-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.new-property-admin-img {
+    width: 400px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.new-property-admin-details {
+    display: block;
+}
+
+.new-property-admin-details h1 {
+    margin-left: 30px;
+    text-align: left;
+    color: #ff6600;
+}
+
+.new-property-admin-details p, .new-property-admin-details h3 {
+    margin-left: 30px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.new-property-admin-item .btn {
+    width: 150px;
+    border-radius: 0px;
+    height: 55px;
+    margin-left: 350px;
+    margin-top:60px;
+}
+.new-property-admin-item .btn2 {
+    width: 150px;
+    border-radius: 0px;
+    height: 55px;
+    margin-left: 20px;
+    margin-top:60px;
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+}
