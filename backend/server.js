@@ -20,8 +20,8 @@ const server = http.createServer(app);
 
 // Middleware
 app.use(cors({
-    origin: ['http://deploy-mern-1whq.vercel.app'],
-    methods: ['GET,HEAD,PUT,PATCH,POST,DELETE'],
+    origin: 'http://localhost:3000',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true
 }));
 
