@@ -14,6 +14,7 @@ const contactUs = require('./routes/aboutUs.route.js');
 const postRoute = require('./routes/post.route.js');
 const doneDeals = require('./routes/doneDeals.route.js');
 require('./config/dataBaseConfig.js');
+require('dotenv').config()
 
 const app = express();
 const server = http.createServer(app);
@@ -43,6 +44,6 @@ app.use('/properties', postRoute);
 
 
 // Start server
-server.listen(8081, () => {
+server.listen(process.env.PORT || 8081, () => {
     console.log("Server is running on port 8081");
 });
