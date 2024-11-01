@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const ApiRequest = axios.create({
-  baseURL: 'http://localhost:8081', // Ensure this is the correct URL
+  baseURL: 'https://e-state-backend-z0s1.onrender.com', // Ensure this is the correct URL
   headers: {
     'Content-Type': 'application/json'
   }
